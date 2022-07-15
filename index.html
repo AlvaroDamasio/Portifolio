@@ -16,16 +16,17 @@
         <nav id="nav-bar">
             
             <div id="nav-bar__logo">
-                 <a href="#"><img src="./public/logo.png" alt="Alvaro"></a>
+                 <a href="#" ><img src="./public/assets/logo.png" alt="Alvaro"></a>
             </div>
     
     
     
             
             <ul id="nav-bar__list">
-                <li class="nav-bar__list__itens"><a href="#">Sobre</a></li>
+                <li class="nav-bar__list__itens"><a href="#about">Sobre</a></li>
                 <li class="nav-bar__list__itens"> <a href=""> Projetos</a> </li>
                 <li class="nav-bar__list__itens">  <a href=""> Habilidades </a> </li>
+                <li class="nav-bar__list__itens">  <a href=""> Contato </a> </li>
             </ul>
         
         </nav>
@@ -51,16 +52,68 @@
             </div>
 
             <div id="home__content__logo">
-                <img src="./public/logo.png" alt="">
+                <img  src="./public/assets/logo.png" alt="">
                 
             </div>
 
         </div>
-        <div id="scrow">
-            <p >Dá um scrow aí</p>
-        </div>
+        
 
-        <img class="background-home" src="./public/logo.png" alt="">
     </section>
+
+    <section id="about">
+        <div class="card">
+            <div class="card__imgBox">
+                <img src="./public/assets/perfil.jpg" alt="">
+            </div>
+            <div class="card__content">
+                <div class="details">
+                    <h2>Álvaro Damásio <br> <span>
+                        Analista e Desenvolvedor de Sistemas
+                    </span></h2>
+                    <div class="data">
+                        <h3>Idade: 19 anos</h3>
+                        <h3> Graduando em Analise e Desenvolvimento de Sistemas na Unopar</h3>
+                        <h3> Curso tecnico de Programação de Dispositivos Moveis SENAC </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        projetos
+    </section>
+
+    <section id="habilidades">
+
+    </section>
+
+    <section id="contato">
+
+    </section>
+
+    <footer>
+        footer
+    </footer>
+
+    <script>
+        let card = document.querySelector('.card')
+        let data = document.querySelector(".data")
+        
+        card.onmouseenter= function(){
+            data.style.display="block"
+            
+        }
+        card.onmouseleave = function(){
+            data.style.display = "none"
+            console.log('foraa');
+        }
+        card.onscrow = function(){
+            data.style.display = "none"
+            console.log('foraa');
+        }
+        
+    </script>
 </body>
 </html>
