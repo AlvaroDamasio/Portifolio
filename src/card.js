@@ -7,9 +7,9 @@ let card = document.querySelector('.card')
         }
         card.onmouseleave = function(){
             data.style.display = "none"
-            console.log('foraa');
+            
         }
         card.onscrow = function(){
             data.style.display = "none"
-            console.log('foraa');
+            
         }
