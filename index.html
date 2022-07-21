@@ -18,7 +18,7 @@
             </div> 
             <ul  class="nav-bar__list">
                 <li class="nav-bar__list__itens"> <a href="#about">Sobre</a></li>
-                <li class="nav-bar__list__itens"> <a href=""> Projetos</a> </li>
+                <li class="nav-bar__list__itens"> <a href="#projetos"> Projetos</a> </li>
                 <li class="nav-bar__list__itens">  <a href=""> Habilidades </a> </li>
                 <li class="nav-bar__list__itens">  <a href=""> Contato </a> </li>
             </ul>   
@@ -82,8 +82,16 @@
         </div>
     </section>
 
-    <section id="projetos">
-        projetos
+    <section id="projetos">        
+        <img src="./public/assets/responsivo site.png" id="slider" alt="">
+        <ul id="navigation">
+            <li onclick="slider('./public/assets/tumb__site2.png', 'um site responsivo' )"> <img src="./public/assets/tumb__site2.png" alt=""> </li>
+            <li onclick="slider('./public/assets/portifolio.png',  'meu portifolio particular' )"> <img src="./public/assets/portifolio.png" alt=""> </li>
+            <li onclick="slider('./public/assets/tumb__site2.png' )"> <img src="./public/assets/tumb__site2.png" alt=""> </li>
+        </ul>
+        <h4 id="title">
+            Projetos
+        </h4>             
     </section>
 
     <section id="habilidades">
@@ -99,5 +107,11 @@
     </footer>
     <script src="./src/card.js"></script>
     <script src="./src/NavBar.js"></script>
+    <script>
+        function slider(img ,text){
+            document.getElementById("slider").src = img
+            document.getElementById("title").innerText = text
+        }
+    </script>
 </body>
 </html>
