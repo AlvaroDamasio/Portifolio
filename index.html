@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    
+
 </head>
 <body>
     <header>
@@ -44,7 +48,7 @@
                 <h1>Álvaro Damásio</h1>
                 <p id= "analista_text">Analista e Desenvolvedor de sistemas</p>
                 <div id="home__buttons">
-                    <button id="contact">Contact</button>
+                    <div class="ButtomColorido"><a href="" >Contact</a></div>
                     <button id="see">Só estou olhando</button>
                 </div>   
             </div>
@@ -83,15 +87,31 @@
     </section>
 
     <section id="projetos">        
-        <img src="./public/assets/responsivo site.png" id="slider" alt="">
-        <ul id="navigation">
-            <li onclick="slider('./public/assets/tumb__site2.png', 'um site responsivo' )"> <img src="./public/assets/tumb__site2.png" alt=""> </li>
-            <li onclick="slider('./public/assets/portifolio.png',  'meu portifolio particular' )"> <img src="./public/assets/portifolio.png" alt=""> </li>
-            <li onclick="slider('./public/assets/tumb__site2.png' )"> <img src="./public/assets/tumb__site2.png" alt=""> </li>
-        </ul>
-        <h4 id="title">
-            Projetos
-        </h4>             
+        <div class="container">
+            <div id="projetosTitle">
+                <div class="circle">
+                </div>
+                <h1>PROJETOS</h1>
+                <p>Conheça alguns dos meus projetos ou acesse o meu <strong>GitHub</strong></p>
+                <div class="ButtomColorido"><a href="https://github.com/AlvaroDamasio?tab=repositories" >GitHub</a></div>
+            </div>
+            <div id="projetosImages">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="./public/assets/responsivo site.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./public/assets/responsive site 2.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./public/assets/portifolio.png" />
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div> 
+            </div>
+        </div>            
     </section>
 
     <section id="habilidades">
@@ -107,11 +127,30 @@
     </footer>
     <script src="./src/card.js"></script>
     <script src="./src/NavBar.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
         function slider(img ,text){
             document.getElementById("slider").src = img
             document.getElementById("title").innerText = text
         }
     </script>
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 100,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+      </script>
 </body>
 </html>

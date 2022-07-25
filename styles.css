@@ -12,7 +12,17 @@ body{
     background-color: black;
     overflow-x: hidden;    
 }
-
+a{
+    text-decoration: none;
+}
+strong{
+    background-image: linear-gradient(#9C49AD, #5494F6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    color: transparent;
+    
+}
 /*--------------------------------------------nav-bar---------------------------------------------------------*/
 
 #nav-bar{
@@ -188,20 +198,29 @@ body{
     justify-content: space-between;  
     
 }
-
-#home__buttons #contact{
+.ButtomColorido{
     font-size: 20px;
+    display: block;
     margin: 2%;
-    margin-top: 2%;
     width: 200px;
     height: 50px;
     color: white;
     border: none;
     border-radius: 30px;
     background-image: linear-gradient(#9C49AD, #5494F6);
-    
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.75s;
+
 }
+.ButtomColorido:hover{
+    width: 250px;
+    height: 75px;
+}
+
+
 
 #home__buttons #see{
     font-size: 20px;
@@ -322,7 +341,7 @@ body{
 /*--------------------------------------------about---------------------------------------------------------*/
 
 #about{
-    height: 90vh;
+    height: 100vh;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -418,44 +437,97 @@ body{
     
 }
 
-
-
-#projetos #slider{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
+#projetos .container{
+    width: 100%;
     height: 100vh;
-    object-fit: cover;
-}
-   
-
-#projetos #navigation{
-    position: absolute;
-    z-index: 4;
     display: flex;
-    bottom: 10%;
+    background-color: black;
     justify-content: center;
     align-items: center;
-}
-#projetos #navigation li{
-    cursor: pointer;
-    margin: 10px;
-    list-style: none;
+    
+    
 }
 
-#projetos #navigation li img{
-    width: 150px;
-    border: 4px solid white;
-}
-#projetos h4{
+#projetosTitle{
     position: relative;
-    font-size: 100px;
-    color: black;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#projetosTitle p{
+    margin: 30px;
+    font-size: 30px;
+    white-space:inherit;
+    word-wrap: break-word;
+}
+#projetosTitle h1{
+   z-index: 1;
+    font-size: 60px;
+}
+#projetosTitle .circle{
+    background-image: linear-gradient(#9C49AD, #5494F6);
+    width: 100%;
+    height: 100%;
+    clip-path: circle(50% at left -20%);
+    position: absolute;
+   
+    
+    
 
 }
 
+#projetosImages{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+#projetosImages p{
+    font-size: 20px;
+    margin: 0;
+}
 
+.swiper {
+    margin: 30px;
+    width: 90%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    #projetos .container{
+        flex-direction: column;
+    }
+    #projetosTitle{
+        width: 100%;
+        height: 50vh;
+    }
+    #projetosImages{
+        width: 100%;
+        height: 50vh;
+    }
+}
+  
 
 /*-----------------------------------------------------------------------------------------------------*/
 
