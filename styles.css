@@ -149,22 +149,13 @@ strong{
     
 }
 
-#home__content__logo{
-    display: flex;
-    width: 50%;
-   height: 100vh;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    
-}
 
-#home__content__title {
+
+#home__content__main, #home__content__logo {
     
     display: flex;
     flex-direction: column;
     position: relative;
-   
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -172,25 +163,18 @@ strong{
     
 }
 
-#title-itens{
 
-    
-    color: white;
-    font-size: 65px;
-    align-items: center;
-    
-}
-#home__content__title h1,p{
-     
+#home__content__main h1{
+    text-align: center;
+    line-height: 1;
     font-size: 65px;
     margin: 0;
     white-space: nowrap;
 }
-#title-itens{
-    display: flex;
-    line-height: 1;
-    
-    
+#home__content__main p{
+    font-size: 30px;
+    word-wrap: break-word;
+    text-align: center;  
 }
 
 #home__buttons{
@@ -239,24 +223,6 @@ strong{
 
 
 
-.gradient{
-    
-    background-image: linear-gradient(#9C49AD, #5494F6);
-    background-clip: text;
-    color: transparent;
-    margin-left: 10px;
-}
-
-#analista_text{
-    background-image: linear-gradient(#9C49AD, #5494F6);
-    background-clip: text;
-    color: transparent;
-    font-size: 30px;
-    line-height: 0.7;
-    padding: 10px;
-}
-
-
 
 .custom-shape-divider-bottom-1657995195 {
     position: absolute;
@@ -283,55 +249,32 @@ strong{
 @media (max-width: 900px) {
     
    
-    #home__content__title h1{
-        font-size: 50px;
-        white-space: unset;
-        
-        
-    }
-    #home__content__title{
-        margin-top: 5vh;
-        padding-top: 0;
-        justify-content: center;
-        width: 100%;
-        
-        
-        
-       
-    }
-    #title-itens p{
+    #home__content__main h1{
         font-size: 45px;
-        background-clip: text;
-        -webkit-background-clip: text;
+   
+    }
+    #home__content__main p{
+        margin: 0 10px;
+        font-size: 25px;
         
     }
+    #home__content__main{
+        margin-top: 5vh;
+        justify-content: center;
+        width: 100%;   
+    }
+    
     #home__content__logo{
         display: none;
     }
     
-    #analista_text{
-        white-space: unset;
-        background-clip: text;
-        -webkit-background-clip: text;
-    }
+    
     #see{
         display: none;
         background-color: black;
     }
 
-    @media (max-width: 900px){
-        #home__content__title h1{
-            font-size: 40px;
-            white-space: unset;
-            
-            
-        }
-        #analista_text{
-            font-size: 20px;
-            text-align: center;
-            
-        }
-    }
+   
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -348,7 +291,7 @@ strong{
     align-items: center;
 }
 
-.card{
+#about .card{
     position: relative;
     width: 40%;
     height: 30vh;
@@ -358,12 +301,11 @@ strong{
     transition: 1s;
 }
 
-.card:hover{
+#about .card:hover{
     height: 60vh;
     
     
-}
-.card__imgBox{
+}#about .card__imgBox{
     position: absolute;
     background-color: white;
     width: 150px;
@@ -375,7 +317,7 @@ strong{
     box-shadow: 0 35px 80px rgba(0, 0, 0, 15);
 }
 
-.card__imgBox img{
+#about .card__imgBox img{
     position: absolute;
     top: 0;
     left: 0;
@@ -386,7 +328,7 @@ strong{
     border-radius: 20px;
     transition: 0.45s;
 }
-.card__content{
+#about .card__content{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -395,7 +337,7 @@ strong{
     align-items: flex-end;
 }
 
-.card__content .details h2{
+#about .card__content .details h2{
     margin: 2px;
     text-align: center;
 }
@@ -411,7 +353,7 @@ strong{
 
 
 @media(max-width: 900px){
-    .card{
+    #about .card{
         width: 80%;
         height: 40vh;
     }
@@ -522,6 +464,9 @@ strong{
         width: 100%;
         height: 50vh;
     }
+    #projetosTitle h1{
+        margin-top: 10vh;
+    }
     #projetosImages{
         width: 100%;
         height: 50vh;
@@ -537,9 +482,121 @@ strong{
 /*--------------------------------------------habilidades---------------------------------------------------------*/
 
 #habilidades{
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-color: #9C49AD;
+    overflow: hidden;
+    
 }
+#habilidades h1{
+    font-size: 50px;
+}
+#habilidades .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+#habilidades .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    height: 450px;
+    background-color: #5494F6;
+    margin: 50px;
+    border-radius: 20px;
+    border-bottom-right-radius: 160px;
+    border-bottom-left-radius: 160px;
+    box-shadow: 0  15px 0 white, 
+    inset 0 -15px 0 rgba(255, 255, 255, 0.25),
+    0 45px rgba(0, 0, 0, 0.15) ;
+    overflow: hidden;
+}
+#habilidades .card::before{
+    content: "alvaro";
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15) ) ;
+    position: absolute;
+    top: -200px;
+    left: -40%;
+    width: 100%;
+    height: 150%;
+    transform: rotate(35deg);
+    filter: blur(3px);   
+}
+#habilidades .card:nth-child(1){
+    background: linear-gradient(to bottom, rgb(231, 235, 5), rgb(184, 163, 43) );
+}
+#habilidades .card:nth-child(2){
+    background: linear-gradient(to bottom, rgb(52, 236, 28), rgb(87, 164, 252) );
+}
+
+#habilidades .card:nth-child(3){
+    background: linear-gradient(to bottom, rgb(28, 58, 228), rgb(213, 213, 236) );
+}
+#habilidades .card:nth-child(4){
+    background: linear-gradient(to bottom, rgb(17, 49, 230), rgb(186, 255, 24) );
+}
+#habilidades .card:nth-child(5){
+    background: linear-gradient(to bottom, #e44d26, rgb(243, 143, 112) );
+}
+#habilidades .card:nth-child(6){
+    background: linear-gradient(to bottom, rgb(17, 49, 230), rgb(97, 175, 238) );
+}
+#habilidades .card:nth-child(7){
+    background: linear-gradient(to bottom, #207196, rgb(138, 73, 223) );
+}
+#habilidades .card:nth-child(8){
+    background: linear-gradient(to bottom, #000000, rgb(231, 224, 240) );
+}
+
+
+
+.habilidades__icon{
+    position: relative;
+    display: flex;
+    
+    justify-content: center;
+    width: 140px;
+    height: 120px;
+    background-color: #9C49AD;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0  15px 0 white, 
+    inset 0 -10px 0 rgba(255, 255, 255, 0.15),
+    0 25px rgba(0, 0, 0, 0.15) ; 
+}
+.habilidades__icon ion-icon{
+    color: white;
+    font-size: 100px;
+}
+.habilidades__content{
+    
+    word-wrap: normal;
+    position: absolute;
+    padding: 30px;
+    padding-top: 160px;
+    width: 100%;
+    text-align: center;
+    
+}
+.habilidades__content h2{
+    font-size: 30px;
+}
+.habilidades__content p{
+    font-size: 15px;
+    
+    
+    
+    
+}
+
+
 
 /*-----------------------------------------------------------------------------------------------------*/
 

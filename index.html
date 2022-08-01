@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    
 
     
 
@@ -23,7 +24,7 @@
             <ul  class="nav-bar__list">
                 <li class="nav-bar__list__itens"> <a href="#about">Sobre</a></li>
                 <li class="nav-bar__list__itens"> <a href="#projetos"> Projetos</a> </li>
-                <li class="nav-bar__list__itens">  <a href=""> Habilidades </a> </li>
+                <li class="nav-bar__list__itens">  <a href="#habilidades"> Habilidades </a> </li>
                 <li class="nav-bar__list__itens">  <a href=""> Contato </a> </li>
             </ul>   
             
@@ -40,13 +41,9 @@
     <section id="home">
 
         <div id="home__content">
-            <div id="home__content__title">
-                <div id="title-itens">
-                    <p>Olá, eu</p>
-                    <p class="gradient"> sou </p>    
-                </div>
-                <h1>Álvaro Damásio</h1>
-                <p id= "analista_text">Analista e Desenvolvedor de sistemas</p>
+            <div id="home__content__main">
+                    <h1>Olá, eu <strong>sou</strong><br> Álvaro Damásio </h1> </p>
+                    <p> <strong> Analista e Desenvolvedor de sistemas </strong> </p>
                 <div id="home__buttons">
                     <div class="ButtomColorido"><a href="" >Contact</a></div>
                     <button id="see">Só estou olhando</button>
@@ -55,15 +52,12 @@
             <div id="home__content__logo">
                 <img  src="./public/assets/logo.png" alt="">  
             </div>
-
             <div class="custom-shape-divider-bottom-1657995195">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
                 </svg>
             </div>
-
         </div>
-        
     </section>
 
     <section id="about">
@@ -78,7 +72,7 @@
                     </span></h2>
                     <div class="data">
                         <h3>Idade: 19 anos</h3>
-                        <h3> Graduando em Analise e Desenvolvimento de Sistemas na Unopar</h3>
+                        <h3> Cursando em Analise e Desenvolvimento de Sistemas na Unopar</h3>
                         <h3> Curso tecnico de Programação de Dispositivos Moveis SENAC </h3>
                     </div>
                 </div>
@@ -115,7 +109,83 @@
     </section>
 
     <section id="habilidades">
+        <h1>Habilidades</h1>
+       <div class="container">
+            <div class="card">
+                <div class="habilidades__icon">
+                    <ion-icon name="logo-javascript"></ion-icon>
+                </div>
+                <div class="habilidades__content">
+                    <h2>Javascript</h2>
+                    <p>JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="habilidades__icon">
+                    <ion-icon name="logo-nodejs"></ion-icon>
+                </div>
+                <div class="habilidades__content">
+                    <h2>Node.js</h2>
+                    <p>Node.js é uma plataforma em que é possível criar aplicações Javascript sem depender de um browser para a execução. Sua execução em single-thread não exige resposta a cada requisição.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="habilidades__icon">
+                    <ion-icon name="logo-react"></ion-icon>
+                </div>
+                <div class="habilidades__content">
+                    <h2>React.js</h2>
+                    <p>O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="habilidades__icon">
+                    <ion-icon name="logo-python"></ion-icon>
+                </div>
+                <div class="habilidades__content">
+                    <h2>Python</h2>
+                    <p>Python é uma linguagem Open-Source de propósito geral,eu uso bastante em desenvolvimento de web automação de scripts</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="habilidades__icon">
+                    <ion-icon name="logo-html5"></ion-icon>
+                </div>
+                <div class="habilidades__content">
+                    <h2>Html</h2>
+                    <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="habilidades__icon">
+                    <ion-icon name="logo-css3"></ion-icon>
+                </div>
+                <div class="habilidades__content">
+                    <h2>CSS</h2>
+                    <p>É um mecanismo para adicionar estilo a um documento web</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="habilidades__icon">
+                    <ion-icon name="logo-wordpress"></ion-icon>
+                </div>
+                <div class="habilidades__content">
+                    <h2>Wordpress</h2>
+                    <p>WordPress é um sistema livre e aberto de gestão de conteúdo para internet, baseado em PHP com banco de dados MySQL, executado em um servidor interpretador, voltado principalmente para a criação de páginas eletrônicas e blogs online</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="habilidades__icon">
+                    <ion-icon name="logo-github"></ion-icon>
+                </div>
+                <div class="habilidades__content">
+                    <h2>Git e Github</h2>
+                    <p>É um sistema de controle de versões e uma hospedagem de codigos fonte</p>
+                </div>
+            </div>
+       </div>
 
+        
     </section>
 
     <section id="contato">
@@ -152,5 +222,7 @@
           },
         });
       </script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
