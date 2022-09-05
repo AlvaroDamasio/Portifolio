@@ -11,7 +11,7 @@ body{
     border: 0;
     font: inherit;
     vertical-align: baseline;
-    background-color: black;
+    background-image: url("./public/assets/630cfcad5ba416ef573230f5_BG-Plan-0.png");
     overflow-x: hidden;
        
 }
@@ -248,7 +248,7 @@ strong{
 }
 
 .custom-shape-divider-bottom-1657995195 .shape-fill {
-    fill: #FFFFFF;
+    fill: white;
 }
 
 
@@ -320,7 +320,7 @@ strong{
 #about .photo .backdrop{
     width: 50%;
     height: 75%;
-    background-color: #5494F6;
+    background-image: url('./public/assets/630cfcad5ba416ef573230f5_BG-Plan-0.png');
     border-radius: 20px;
 }
 #about .photo img{
@@ -353,7 +353,7 @@ strong{
 #about .block{
     width: 30%;
     height: 100%;
-    background-color: #5494F6;
+    background-image: url('./public/assets/630cfcad5ba416ef573230f5_BG-Plan-0.png');
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -441,7 +441,7 @@ strong{
     width: 100%;
     height: 100vh;
     display: flex;
-    background-color: black;
+    background-image: url('./public/assets/630cfcad5ba416ef573230f5_BG-Plan-0.png');
     justify-content: center;
     align-items: center;
     
@@ -545,7 +545,10 @@ strong{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: linear-gradient(#9C49AD, #5494F6);
+    /*background-image: linear-gradient(#9C49AD, #5494F6);*/
+    background-image: url('./public/assets/6312703ef4c52f437be89ff2_BG-trilhas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
     
 }
